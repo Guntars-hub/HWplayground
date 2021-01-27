@@ -61,13 +61,13 @@ if quantity < 5 && quantity > 0{
  Fix this Fatal error inside the if-else statements to print whenever this age can be converted to Int or not!
  */
 
-var userInputAge: String? = "33a"
-var converToInt = Int(userInputAge!)
+var userInputAge = "33a§"
+//var converToInt = userInputAge!
 
-if Int(userInputAge!) == nil {
-print ("userInputAge does not contain some value")
+if let convertStringToInt = Int(userInputAge) {
+    print("userInputAge contains: \(convertStringToInt)")
 } else {
-    print("userInputAge contains",userInputAge)
+    print ("userInputAge does not contain some value")
 }
 
     
