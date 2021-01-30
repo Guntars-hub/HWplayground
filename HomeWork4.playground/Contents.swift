@@ -15,7 +15,7 @@ import UIKit
 
 var myTeam = "Boys"
 
-let BoysScore = ["firstGame":99, "secondGame":110, "thirdGame":120, "fourthGame":98]
+let BoysScore = ["firstGame":99, "secondGame":109, "thirdGame":120, "fourthGame":98]
 let resultsOfGames = ["Brooklyn Nets":89, "Brooklyn Nets2:":99, "Washington Wizards":117, "Washington Wizards2":122]
 
 for (key, value) in resultsOfGames{
@@ -37,7 +37,7 @@ var wallet = [5, 10, 20, 50, 100, 200, 500]
 
 func calculateCash(){
     let sum = wallet.reduce(0, +)
-    print("Total money in the wallet is: ", sum)
+    print("\nTotal money in the wallet is: ", sum)
 }
 
 calculateCash()
@@ -74,7 +74,7 @@ func createArray(from: Int, to: Int) -> [Int] {
 
 var array = createArray(from: 1, to: 100)
 
-print("All number array:", array)
+print("\nAll number array:", array)
 
 
 /*
@@ -85,14 +85,14 @@ print("All number array:", array)
  Calculate and remove isEvenNumber using if array.firstIndex of number, inside the if array.remove at index.
  It should be 1/2 of createArray and started from [1,3,5.....
  */
-var newArray: [Int] = []
+
 for number in array{
     let evenNum = isEvenNumber(number: number)
-    var numbersToRemove = 0
+    var evenNumbersToRemove = 0
     if evenNum == true {
-        numbersToRemove = array.firstIndex(of: number)!
-        let _ = array.remove(at: numbersToRemove)
+        evenNumbersToRemove = array.firstIndex(of: number)!
+        let _ = array.remove(at: evenNumbersToRemove)
     }
 }
 
-print("Only odd number array: ", array)
+print("\nOnly odd number array: ", array)
